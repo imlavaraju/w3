@@ -8,7 +8,7 @@ const AdminDashboard = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/users");
+        const response = await axios.get("https://w3-peach.vercel.app/api/users");
         setUsers(response.data);
         console.log(response.data);
       } catch (error) {
