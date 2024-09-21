@@ -33,7 +33,7 @@ const UserForm = () => {
     };
 
     try {
-      await axios.post("http://localhost:5000/api/users", userData);
+      await axios.post("https://w3-peach.vercel.app/api/users", userData);
       alert("Data submitted successfully!");
       setImages([]);
       setName("");
